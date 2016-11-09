@@ -1,0 +1,76 @@
+.bus-seats {
+  background: #f7f7f7;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #d6d6d6;
+  display: flex;
+  padding: 20px;
+  float: left;
+}
+
+.bus-seats-title {
+  margin: 20px;
+}
+
+.bus-seats-column {
+  float: left;  
+}
+
+.bus-seat-cell {
+  margin: 10px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #d6d6d6;
+}
+
+.bus-seat-cell--booked {
+  background: yellow;
+  cursor: no-drop;
+}
+
+.bus-seat-cell--notbooked {
+  background: lightgreen;
+  cursor: pointer;
+}
+
+.bus-seat-cell--selected {
+  background: green;
+  cursor: pointer;
+}
+
+.bus-seats-card {
+  background: #f7f7f7;
+  margin: 20px;
+  border: 1px solid #d6d6d6;
+  float: left;
+  padding: 15px;
+}
+
+.bus-seats-description {
+  clear: both;
+}
+
+.bus-seat-cell-description {
+  float: left;
+  border-right: 1px solid #d6d6d6;
+  text-align: center;
+  padding: 10px;
+  .bus-seat-cell {
+    margin: 5px auto;
+  }
+  &:last-child {
+    border: none;
+  }
+}
+
+.bus-seats-form {
+  clear: both;
+  margin-top: 20px;
+  float: left;
+  input {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+}
